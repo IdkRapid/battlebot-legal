@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service & Privacy Policy — Battle Bot</title>
+<style>
+  :root {
+    --bg:      #ffffff;
+    --surface: #f9f9f9;
+    --border:  #e5e5e5;
+    --text:    #111111;
+    --muted:   #666666;
+    --accent:  #2c2c2c;
+    --rule:    #d0d0d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:      #111111;
+      --surface: #1a1a1a;
+      --border:  #2a2a2a;
+      --text:    #eeeeee;
+      --muted:   #888888;
+      --accent:  #dddddd;
+      --rule:    #333333;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:      #111111;
+    --surface: #1a1a1a;
+    --border:  #2a2a2a;
+    --text:    #eeeeee;
+    --muted:   #888888;
+    --accent:  #dddddd;
+    --rule:    #333333;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 60px 24px 100px;
+  }
+  .page { max-width: 680px; margin: 0 auto; }
+  .site-header { margin-bottom: 52px; padding-bottom: 28px; border-bottom: 2px solid var(--text); }
+  .site-header .brand { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .site-header h1 { font-size: 28px; font-weight: normal; letter-spacing: -0.5px; line-height: 1.2; }
+  .site-header .date { margin-top: 8px; font-size: 13px; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .tab-nav { display: flex; gap: 0; margin-bottom: 48px; border-bottom: 1px solid var(--border); }
+  .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 10px 20px 10px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted); cursor: pointer; margin-bottom: -1px; transition: color 0.1s, border-color 0.1s; text-transform: uppercase; }
+  .tab-btn + .tab-btn { padding-left: 20px; }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--text); }
+  .tab-btn:hover:not(.active) { color: var(--text); }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .section { margin-bottom: 40px; }
+  .section h2 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+  .section p { margin-bottom: 12px; font-size: 15px; }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul { list-style: none; padding: 0; margin: 12px 0; }
+  .section ul li { padding: 6px 0 6px 16px; border-left: 2px solid var(--rule); margin-bottom: 6px; font-size: 15px; }
+  .section ul li:last-child { margin-bottom: 0; }
+  hr.section-rule { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  .contact-block { margin-top: 12px; font-family: monospace; font-size: 14px; }
+  .contact-block a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+  .doc-footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
+  strong { font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="brand">Battle Bot — Legal</div>
+    <h1 id="doc-title">Terms of Service</h1>
+    <div class="date">Effective August 13, 2026</div>
+  </header>
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="show('tos', this, 'Terms of Service')">Terms of Service</button>
+    <button class="tab-btn" onclick="show('pp', this, 'Privacy Policy')">Privacy Policy</button>
+  </nav>
+  <div id="tos" class="panel active">
+    <div class="section"><h2>1. Acceptance</h2><p>By adding or interacting with Battle Bot ("the Bot") in any Discord server, you agree to be bound by these Terms of Service. If you do not agree, do not use the Bot.</p><p>These Terms apply to all users and server administrators who interact with the Bot directly or indirectly.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>2. Description of Service</h2><p>The Bot provides Discord-based clan battle tracking features, including live dashboards, point contribution tracking, global rank monitoring, leaderboards, and automated member notifications.</p><p>Features may be modified, added, or discontinued at any time without prior notice.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>3. Eligibility</h2><p>To use the Bot, you must:</p><ul><li>Comply with Discord's Terms of Service and Community Guidelines</li><li>Meet the minimum age requirement set by Discord (13 years, or older where required by applicable law)</li><li>Maintain a Discord account in good standing</li></ul></div>
+    <hr class="section-rule">
+    <div class="section"><h2>4. Prohibited Conduct</h2><p>You may not use the Bot to:</p><ul><li>Exploit or manipulate any feature for unintended results</li><li>Harass, threaten, or harm other users</li><li>Reverse-engineer, probe, or interfere with the Bot's underlying systems</li><li>Automate interactions with the Bot in a way that degrades performance for others</li><li>Engage in any unlawful activity or violate applicable laws</li></ul><p>Violations may result in permanent restriction from the Bot without prior notice.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>5. Administrator Responsibilities</h2><p>If you add the Bot to a server you manage, you accept responsibility for its appropriate configuration and ensuring that its use within your server complies with Discord's guidelines and these Terms.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>6. Availability</h2><p>The Bot is provided on an as-available basis without guarantees of uptime, continuity, or fitness for a particular purpose. Downtime may occur due to maintenance or circumstances outside our control. We are not liable for any loss resulting from unavailability of the Bot.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>7. Termination</h2><p>We reserve the right to restrict or terminate any user's or server's access to the Bot at our sole discretion, with or without notice. Server administrators may remove the Bot from their server at any time.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>8. Disclaimer of Warranties</h2><p>The Bot is provided "as is" without warranty of any kind, express or implied. We make no representations that the Bot will be error-free, secure, or continuously available. Use of the Bot is at your sole risk.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>9. Limitation of Liability</h2><p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, consequential, or special damages arising from your use of the Bot, including loss of tracked data or statistics.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>10. Modifications</h2><p>We may update these Terms at any time. Continued use of the Bot following any changes constitutes acceptance of the revised Terms.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>11. Contact</h2><p>Questions regarding these Terms may be directed to:</p><div class="contact-block"><a href="mailto:jayxce10@gmail.com">jayxce10@gmail.com</a></div></div>
+    <div class="doc-footer">These Terms of Service govern your use of Battle Bot. Use of the Bot constitutes acceptance of these Terms in full.</div>
+  </div>
+  <div id="pp" class="panel">
+    <div class="section"><h2>1. Introduction</h2><p>This Privacy Policy describes what data Battle Bot ("the Bot", "we", "us") collects, how it is used, and your rights with respect to that data.</p><p>By using the Bot, you agree to the practices described in this Policy.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>2. Data We Collect</h2><p>We collect only the data necessary to operate the Bot:</p><ul><li><strong>Discord User IDs</strong> — to identify members across tracking and dashboard features</li><li><strong>Discord Server IDs</strong> — to associate per-server configurations and tracked battles</li><li><strong>Roblox Usernames and User IDs</strong> — when linked by a user to enable game data retrieval</li><li><strong>Clan Battle Statistics</strong> — point contributions, rank history, and related data sourced from public game APIs</li><li><strong>Command Timestamps</strong> — recorded solely to enforce cooldowns and anti-abuse measures</li><li><strong>Server Configuration</strong> — channel and role IDs set by server administrators for notifications and dashboard output</li></ul><p>We do not collect passwords, payment details, email addresses, or any personal information beyond what is listed above.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>3. How We Use Your Data</h2><p>All data collected is used exclusively to provide and maintain the Bot's features, including:</p><ul><li>Clan battle tracking, live dashboards, and leaderboards</li><li>Global rank monitoring and point history</li><li>Delivering automated notifications to configured channels</li><li>Cooldown enforcement and abuse prevention</li><li>Storing server-specific settings</li></ul><p>Data is never used for advertising, profiling, or any purpose unrelated to the Bot.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>4. Data Retention</h2><ul><li>Short-term point history data is retained for up to 25 hours and purged automatically</li><li>Battle statistics and rank history are retained for the duration of an active battle and a reasonable period after its conclusion</li><li>Server configuration data is retained until removed by an administrator or until the Bot is removed from the server</li></ul></div>
+    <hr class="section-rule">
+    <div class="section"><h2>5. Data Sharing</h2><p>We do not sell, license, or share your data with third parties for commercial or marketing purposes. Game statistics are sourced from publicly accessible APIs and are not transmitted to any external services by us.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>6. Security</h2><p>We implement reasonable technical measures to protect stored data from unauthorized access. No system can guarantee absolute security, and we cannot warrant that data will remain secure under all circumstances.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>7. Your Rights</h2><p>You may request deletion or a copy of your data at any time by contacting us. We will process such requests within a reasonable timeframe.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>8. Children's Privacy</h2><p>The Bot is not directed at individuals under the age of 13. We do not knowingly retain data from users under 13. If you have reason to believe a minor has provided data to us, please contact us and we will promptly delete it.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>9. Changes to This Policy</h2><p>We may revise this Privacy Policy at any time. The effective date at the top of the page will reflect any updates. Continued use of the Bot after revisions constitutes acceptance of the updated Policy.</p></div>
+    <hr class="section-rule">
+    <div class="section"><h2>10. Contact</h2><p>Data deletion requests and privacy inquiries can be sent to:</p><div class="contact-block"><a href="mailto:jayxce10@gmail.com">jayxce10@gmail.com</a></div></div>
+    <div class="doc-footer">This Privacy Policy applies to Battle Bot only.</div>
+  </div>
+</div>
+<script>
+  function show(id, btn, title) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+    document.getElementById('doc-title').textContent = title;
+  }
+</script>
+</body>
+</html>
